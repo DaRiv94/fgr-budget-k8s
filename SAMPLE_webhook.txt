@@ -1,0 +1,7 @@
+DATABASE_URL=postgres://postgres:postgres@pg1:5432/local_fgr_budget
+NODE_ENV=sandbox
+PLAID_DEV_CLIENT_ID=<PLAID_DEV_CLIENT_ID>
+SANDBOX_PLAID_SECRET=<SANDBOX_PLAID_SECRET>
+PLAID_DEV_SECRET=<PLAID_DEV_SECRET>
+EMAIL_SERVICE_URL=http://email-service-service:5500
+TO_EMAIL=<Your_email>
