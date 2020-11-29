@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1beta1
+kind: Certificate
+metadata:
+  name: fgr-budget-tls
+spec:
+  secretName: fgr-budget
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+  dnsNames:
+    - fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+  # acme:
+  #   config:
+  #     - http01:
+  #         ingressClass: nginx
+  #       domains:
+  #         - fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+    
