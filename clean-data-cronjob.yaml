@@ -1,0 +1,23 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: clean-data-cronjob
+spec:
+  schedule: "0 0 * * *"
+  jobTemplate:
+    spec:
+      backoffLimit: 5
+      template:
+        spec:
+          containers:
+          - name: clean-data-container
+            image: dariv94/kubebud_webhook:1.1.1
+            imagePullPolicy: IfNotPresent
+            args:
+            - npm
+            - run
+            - clean_data
+            envFrom:
+            - secretRef:
+                name: webhook-secrets
+          restartPolicy: Never
