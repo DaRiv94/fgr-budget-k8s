@@ -25,3 +25,7 @@ spec:
             backend:
               serviceName: backend-service
               servicePort: 4500
+          - path: /webhook/?(.*)
+            backend:
+              serviceName: webhook-service
+              servicePort: 3500
