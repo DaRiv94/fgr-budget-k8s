@@ -1,4 +1,4 @@
-# FGR Budget Backend
+# FGR Kubernetes Demo
 
 This repo is used to hold the kubernetes yaml files for starting up the [ FGR Kubernetes Demo](https://frankieriviera.com/portfolio/kubernetes-demo) by [Frankie Riviera](https://frankieriviera.com) 
 
@@ -13,7 +13,7 @@ Check out my [Online Portfolio](https://frankieriviera.com/portfolio) to see som
 [<img src="./images/ckad_from_cncfsite.png" width="130" > ](https://www.youracclaim.com/badges/fe571b34-07dd-4298-915c-32dca08d8e5a)
 
 
-## What is this Demo?
+## What is the Demo?
 
 This Kubernetes demo demonstrates my proficiency with Containerization, Kubernetes, and the building of full-scale applications from scratch using a microservice architecture. The application use case is a personal budget app that connects to bank accounts and allows users to track transactions, and manage budgets.
 
