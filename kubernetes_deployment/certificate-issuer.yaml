@@ -9,10 +9,10 @@ spec:
     privateKeySecretRef:
       name: letsencrypt
     solvers:
-    - http01: {} #some comment
-        # ingress: Would remove curly brackets if I use the lines below
-        #   class: nginx
-        #   podTemplate:
-        #     spec:
-        #       nodeSelector:
-        #         "kubernetes.io/os": linux
+    - http01:
+        ingress:
+          class: nginx
+          podTemplate:
+            spec:
+              nodeSelector:
+                "kubernetes.io/os": linux

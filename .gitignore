@@ -1,7 +1,19 @@
+# Terraform vars and local state
+azurecreds.auto.tfvars
+commonVars-dev.auto.tfvars
+.terraform
+
+# Text files that symbolyze the env vars for microservices
 backend.txt
 email_service.txt
 frontend.txt
 dynamic_auth.txt
 webhook.txt
-debug_folder
+
+# Config.json file for generating dynamic_auh.txt file contents
 config.json
+
+# files and directory for debugging purposes
+debug_folder
+config_folder
+
