@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: run-database-migrations
+spec:
+  completions: 1
+  backoffLimit: 8
+  template:
+    spec:
+      containers:
+      - name: run-database-migrations-con
+        image: dariv94/kubebud_webhook:1.1.3
+        command: ["npx", "sequelize","db:migrate"]
+        envFrom:
+          - secretRef:
+              name: webhook-secrets
+      restartPolicy: Never

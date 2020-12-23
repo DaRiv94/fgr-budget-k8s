@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+        - fgr-kubernetes-demo-terraform.eastus.cloudapp.azure.com
       secretName: fgr-budget
   rules:
-    - host: fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+    - host: fgr-kubernetes-demo-terraform.eastus.cloudapp.azure.com
       http:
         paths:
           - path: /?(.*)

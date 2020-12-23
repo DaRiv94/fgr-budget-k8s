@@ -7,9 +7,9 @@ spec:
   issuerRef:
     name: letsencrypt
     kind: ClusterIssuer
-  commonName: fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+  commonName: fgr-kubernetes-demo-terraform.eastus.cloudapp.azure.com
   dnsNames:
-    - fgr-kubernetes-demo.northcentralus.cloudapp.azure.com
+    - fgr-kubernetes-demo-terraform.eastus.cloudapp.azure.com
   # acme:
   #   config:
   #     - http01:

@@ -6,10 +6,10 @@
 
 
 # Public IP address of your ingress controller
-$IP="<IP_HERE>" 
+$IP="<IP_Address>" 
 
 # Name to associate with public IP address 
-$DNSNAME="fgr-kubernetes-demo-terraform-2"
+$DNSNAME="fgr-kubernetes-demo-terraform"
 
 $NAME=$(az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '$IP')].[name]" --output tsv)
 
