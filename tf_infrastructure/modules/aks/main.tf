@@ -29,15 +29,3 @@ resource "azurerm_kubernetes_cluster" "AKS" {
   }
 
 }
-
-resource "azurerm_kubernetes_cluster_node_pool" "platform_nodes" {
-  name                  = "area2"
-  kubernetes_cluster_id = azurerm_kubernetes_cluster.AKS.id
-  vm_size               = "Standard_B2s"
-  enable_auto_scaling   = true
-  max_count             = lookup(var.auto_scaling_max_count, var.environment)
-  min_count             = lookup(var.auto_scaling_min_count, var.environment)
-  node_count            = lookup(var.auto_scaling_default_node_count, var.environment)
-  node_labels           = { app : "area2" }
-
-}
