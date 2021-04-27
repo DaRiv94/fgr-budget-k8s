@@ -6,7 +6,7 @@ You can find more detailed info on the [ FGR Kubernetes Demo here](https://frank
 
 Check out my [Online Portfolio](https://frankieriviera.com/portfolio) to see some of my other demos!
 
-[<img src="./images/1000x1000_FGR_FINANCE.png" width="100" > Check out the running Demo Here](http://kubernetes-demo.frankieriviera.com)
+<!-- [<img src="./images/1000x1000_FGR_FINANCE.png" width="100" > Check out the running Demo Here](http://kubernetes-demo.frankieriviera.com) -->
 
 ## I am a Cerified Kubernetes Application Developer
 
